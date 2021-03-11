@@ -21,7 +21,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
  
 Plug 'endel/vim-github-colorscheme'
- 
+Plug 'https://github.com/ap/vim-css-color.git'
 
 Plug 'morhetz/gruvbox'
 
