@@ -8,8 +8,6 @@ Plug 'scrooloose/nerdtree'
  
 Plug 'tpope/vim-surround'
  
- 
- 
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 Plug 'mattn/emmet-vim'
