@@ -1,34 +1,29 @@
-" Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
 
+let g:coc_disable_startup_warning = 1
+call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'tsony-tsonev/nerdtree-git-plugin'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+ 
+ 
 Plug 'tpope/vim-surround'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
-Plug 'airblade/vim-gitgutter'
+ 
+ 
+ 
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 Plug 'mattn/emmet-vim'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+ 
 Plug  'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'vim-airline/vim-airline'
 Plug 'endel/vim-github-colorscheme'
-Plug 'epilande/vim-es2015-snippets'
-Plug 'epilande/vim-react-snippets'
-Plug 'SirVer/ultisnips'
+ 
+ 
 Plug 'NLKNguyen/papercolor-theme'
-" let g:UltiSnipsExpandTrigger="<C-l>"
-
-
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+ 
 Plug 'endel/vim-github-colorscheme'
-
-Plug 'christoomey/vim-tmux-navigator'
+ 
 
 Plug 'morhetz/gruvbox'
 
@@ -36,12 +31,13 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'Rigellute/shades-of-purple.vim'
 " Initialize plugin system
 call plug#end()
+ 
 
 set encoding=UTF-8
-set guifont=DroidSansMono\ Nerd\ Font\ 11
+ 
 
 inoremap jk <ESC>
-nmap <F4> :NERDTreeToggle<CR>
+ 
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -74,13 +70,13 @@ let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeIgnore = ['^node_modules$']
 
 " vim-prettier
-"let g:prettier#quickfix_enabled = 0
-"let g:prettier#quickfix_auto_focus = 0
+let g:prettier#quickfix_enabled = 0
+let g:prettier#quickfix_auto_focus = 0
 " prettier command for coc
-"command! -nargs=0 Prettier :CocCommand prettier.formatFile
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " run prettier on save
-"let g:prettier#autoformat = 0
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 
 " ctrlp
@@ -101,7 +97,7 @@ set expandtab
 
 "colorscheme
 
-colorscheme  default
+colorscheme  PaperColor
 let g:airline_theme='papercolor'
  
 
