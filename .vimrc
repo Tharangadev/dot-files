@@ -1,10 +1,8 @@
-
 let g:coc_disable_startup_warning = 1
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
- 
  
 Plug 'tpope/vim-surround'
  
@@ -15,12 +13,20 @@ Plug 'mattn/emmet-vim'
 Plug  'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'vim-airline/vim-airline'
 Plug 'endel/vim-github-colorscheme'
+"vue highlighting
+Plug 'posva/vim-vue'
+
+"fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
  
  
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
  
 Plug 'endel/vim-github-colorscheme'
+
 Plug 'https://github.com/ap/vim-css-color.git'
 
 Plug 'morhetz/gruvbox'
@@ -84,7 +90,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-set relativenumber
+"set relativenumber
 
 set smarttab
 set cindent
